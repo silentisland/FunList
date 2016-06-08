@@ -108,7 +108,7 @@ public class NonEmptyList<T> implements FunList<T> {
 
     @Override
     public FunList<T> sublist(int startIdnex, int endIndex) {
-        if (startIdnex >= 0 && startIdnex < tail.size() - 1 && endIndex >= startIdnex) {
+        if (startIdnex >= 0 && startIdnex < tail.size() - 1 && endIndex >= startIdnex && endIndex < tail.size -1) {
             return startIdnex == 0 ? new NonEmptyList<T>(head, tail.sublist(0, endIndex - 1)) :
                     tail.sublist(startIdnex - 1, endIndex - 1);
         }
