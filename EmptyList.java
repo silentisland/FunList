@@ -5,9 +5,6 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-/**
- * Created by Admin on 04.06.2016.
- */
 public class EmptyList<T> implements FunList<T> {
 
     @Override
